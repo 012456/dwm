@@ -1785,7 +1785,7 @@ showhide(Client *c)
 		return;
 	if (ISVISIBLE(c)) {
 		/* show clients top down */
-		if (savefloats && !c->mon->lt[c->mon->sellt]->arrange && c->sfx != -9999 && !c->isfullscreen) {
+		if (!c->mon->lt[c->mon->sellt]->arrange && c->sfx != -9999 && !c->isfullscreen) {
 			XMoveWindow(dpy, c->win, c->sfx, c->sfy);
 			resize(c, c->sfx, c->sfy, c->sfw, c->sfh, 0);
 		} else {
@@ -1894,7 +1894,7 @@ togglefloating(const Arg *arg)
 		return;
 	selmon->sel->isfloating = !selmon->sel->isfloating || selmon->sel->isfixed;
 	if (selmon->sel->isfloating)
-		if (savefloats && selmon->sel->sfx != -9999) {
+		if (selmon->sel->sfx != -9999) {
 			/* restore last known float dimensions */
 			resize(selmon->sel, selmon->sel->sfx, selmon->sel->sfy,
 			       selmon->sel->sfw, selmon->sel->sfh, 0);
