@@ -34,10 +34,8 @@ You may also be interested in this
 
 ## Hacks
 
-- Even when resizehints is enabled, it won't be employed when there's
-  only 1 window in view and it's non-floating.  This pairs nicely with
-  the smartgaps option and the noborder patch to maximize single window
-  screen space.
+- Resizehints, borders, and gaps all vanish in monocle layout, but are
+  present (when set in config) in all other views.
 
 
 ## Requirements
