@@ -31,6 +31,9 @@ Here's the [dwm homepage](https://dwm.suckless.org/) and
   Toggle fullscreen for a window.
 - [xrdb](https://dwm.suckless.org/patches/xrdb/):
   Read colors from `xrdb` at run time.
+- [barpadding](https://dwm.suckless.org/patches/barpadding/):
+  Add verticle and horizontal space between the statusbar and the edge
+  of the screen.
 
 
 ## Requirements
