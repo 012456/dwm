@@ -34,6 +34,9 @@ Here's the [dwm homepage](https://dwm.suckless.org/) and
 - [barpadding](https://dwm.suckless.org/patches/barpadding/):
   Add verticle and horizontal space between the statusbar and the edge
   of the screen.
+- [swallow](https://dwm.suckless.org/patches/swallow/):
+  Graphical programs ran from the terminal emulator will fill that
+  window.
 
 
 ## Requirements
